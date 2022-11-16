@@ -1,0 +1,23 @@
+x = input("Bem vindo a calculadora de compensação de carbono digite o nome da sua impresa para começar:")
+print("ok vamos comecar a calcular a emissão de carbono anual da sua impressa")
+print("complete a tabela")
+f1 = int(input("quantos funcionarios gastão 2l de gasolina por dia:"))
+f2 = int(input("quantos funcionarios gastão 4l de gasolina por dia:"))
+f3 = int(input("quantos funcionarios gastão 6l de gasolina por dia:"))
+f4 = int(input("quantos funcionarios gastão 8l de gasolina por dia:"))
+f5 = int(input("quantos funcionarios gastão 10l de gasolina por dia:"))
+resposta1 =f1*2*0.82*0.75*3.7
+resposta2 =f2*4*0.82*0.75*3.7
+resposta3 =f3*6*0.82*0.75*3.7
+resposta4 =f4*8*0.82*0.75*3.7
+resposta5 =f5*10*0.82*0.75*3.7
+dia=resposta1+resposta2+resposta3+resposta4+resposta5
+print("a pegada de carbona da sua impressa por dia é:",dia,"kg de co2")
+ano=int(input("coloque os dias trabalhados anualmente:"))
+final=ano*dia
+if final <= 500:
+ print("A impresa",x,"produs um total de",final,"kg de CO2 por ano necessario plantar 2 a 4 arvores")
+
+elif final >=1000:
+     print("A impresa",x,"produs um total de",final,"kg de CO2 por ano necessario plantar 5 a 7 arvores")
+
